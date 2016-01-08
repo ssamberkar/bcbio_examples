@@ -1,5 +1,7 @@
 #!/bin/bash
-#$ -l rmem=32G -l mem=64G -binding linear:16
+#$ -pe openmp 16
+#memory requests are per-core
+#$ -l rmem=2G -l mem=4G
 
 module load apps/gcc/5.2/bcbio/0.9.6a
 work_dir='/shared/hidelab2/user/md4zsa/Work/TDP_Omics_Study'
