@@ -2,6 +2,8 @@
 #$ -pe openmp 16
 #memory requests are per-core
 #$ -l rmem=2G -l mem=4G
+#Prefer the hidelab queue but spill over to over queues if it is full
+#$ -P hidelab
 
 module load apps/gcc/5.2/bcbio/0.9.6a
 work_dir='/shared/hidelab2/user/md4zsa/Work/TDP_Omics_Study'
