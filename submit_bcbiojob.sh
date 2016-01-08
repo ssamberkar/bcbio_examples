@@ -22,6 +22,7 @@ bcbio_nextgen.py -w template illumina-rnaseq tdp43_project
 
 #Edit the template
 echo "EDITTING TEMPLATE"
+#Switch to the hg38 genome
 sed -i 's/GRCh37/hg38/g' $work_dir/tdp43_project/config/tdp43_project-template.yaml
 
 #Initialise the main analysis
