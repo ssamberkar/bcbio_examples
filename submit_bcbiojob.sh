@@ -18,4 +18,4 @@ tdp43_r2=($(find $tdp43_r2_files -type f -name "*.gz"|sort -n))
 bcbio_nextgen.py -w template illumina-rnaseq tdp43_project
 
 #Initiate the main analysis
-bcbio_nextgen.py -w template $work_dir/tdp43_project/config/tdp43_project-template.yaml $work_dir/tdp43_project ${tdp43_r1[@]} ${tdp43_r2[@]}
+bcbio_nextgen.py -w template $work_dir/tdp43_project/config/tdp43_project-template.yaml $work_dir/tdp43_project.csv ${tdp43_r1[@]} ${tdp43_r2[@]}
